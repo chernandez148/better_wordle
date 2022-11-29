@@ -6,7 +6,7 @@ window.onload = function () {
 
   let wordle;
   const getWordle = () => {
-    fetch("http://localhost:8000/word")
+    fetch("https://random-words5.p.rapidapi.com/getMultipleRandom?count=5")
       .then((responce) => responce.json())
       .then((json) => {
         console.log(json);
